@@ -125,7 +125,7 @@ st.markdown("""
 # 5. Sidebar Controls
 with st.sidebar:
     st.header("⚙️ Settings")
-    threshold = st.slider("Risk Cut-off Threshold", 0.05, 0.50, 0.15, 0.01)
+    threshold = st.slider("Risk Cut-off Threshold", 0.05, 0.50, 0.30, 0.01)
     st.caption("Lower cut-offs trigger proactive retention warnings earlier.")
     
     st.markdown("---")
