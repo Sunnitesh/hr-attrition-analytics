@@ -102,8 +102,10 @@ st.markdown("""
 # 3. Model & Scaler Loader
 @st.cache_resource
 def load_artifacts():
-    model = joblib.load(r'C:\Users\admin\Desktop\PROJECT D.A\Attrition project\hr_attrition_model_10.pkl')
-    scaler = joblib.load(r'C:\Users\admin\Desktop\PROJECT D.A\Attrition project\hr_attrition_scaler_10.pkl')
+    from pathlib import Path
+    base = Path(__file__).parent
+    model = joblib.load(base / "hr_attrition_model_10.pkl")
+    scaler = joblib.load(base / "hr_attrition_scaler_10.pkl")
     return model, scaler
 
 try:
