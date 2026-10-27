@@ -1,0 +1,31 @@
+{
+  "threshold": 0.27,
+  "test_size": 294,
+  "accuracy": 0.68,
+  "recall": 0.723,
+  "precision": 0.296,
+  "f1": 0.42,
+  "roc_auc": 0.744,
+  "confusion_matrix": [
+    [
+      166,
+      81
+    ],
+    [
+      13,
+      34
+    ]
+  ],
+  "feature_importance": {
+    "Age": 0.1478,
+    "DistanceFromHome": 0.1113,
+    "EnvironmentSatisfaction": 0.0634,
+    "JobSatisfaction": 0.0576,
+    "MonthlyIncome": 0.184,
+    "NumCompaniesWorked": 0.0863,
+    "TotalWorkingYears": 0.1202,
+    "WorkLifeBalance": 0.0518,
+    "YearsAtCompany": 0.1087,
+    "OverTime": 0.0689
+  }
+}
